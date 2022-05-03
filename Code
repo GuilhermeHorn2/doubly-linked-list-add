@@ -1,0 +1,27 @@
+typedef struct node{
+    //i want to represent polynomials,data = coeficient,n = i(x**i)
+    int data;
+    struct node *prev;
+    struct node *next;
+}node;
+
+//a lista e um pointer para o 1 node
+
+typedef struct node *p_node;
+
+p_node cirar(lista){
+   lista = NULL;
+   return lista;
+}
+
+void add(p_node lista,int x){
+    p_node p;
+    p = malloc(sizeof(node));
+    p->data = x;
+    p->next = lista;
+    lista->prev = p;
+    
+}
+
+
+
